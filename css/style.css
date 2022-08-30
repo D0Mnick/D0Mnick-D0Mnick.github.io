@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* read more style start here */
+.text{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.moreText{
+    display: none;
+}
+.read-more-btn{
+    padding: 15px 60px;
+}
+.text.show-more .moreText{
+    display: inline;
+}
+.text.show-more .dots{
+    display: none;
+}
+/* read more style end here */
+
+/* status message style start */
+#status{
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+}
+#status.success{
+    background-color: rgb(211, 250, 153);
+    color: green;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(250, 150, 153);
+    color: red;
+    animation: status 4s ease forwards;
+}
+@keyframes status
+{
+0%{
+    opacity: 5;
+}
+25%{
+    opacity: 4;
+}
+50%{
+    opacity: 3;
+}
+75%{
+    opacity: 2;
+}
+100%{
+    opacity: 0;
+}
+}
+/* status message style end */
+
+.nav-link{
+    color: white;
+  
+ 
+}
+
+.nav-link:hover{
+    color: #ff5733;
+}
