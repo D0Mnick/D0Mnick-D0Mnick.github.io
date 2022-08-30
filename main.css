@@ -1,0 +1,1145 @@
+
+/*https://github.com/michalsnik/aos*/
+/*brumma.af/shadows for search a color*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+
+}
+
+.nav-link{
+    color: white;
+ 
+}
+.nav-link:hover{
+    color: #ff5733;
+}
+.grey{
+    background-color: #222;
+}
+
+span{
+    color: red;
+}
+ /*smooth */
+html{
+    scroll-behavior: smooth;
+}
+
+.back{
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:auto;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.back .overlay { /*background Change*/
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.mid{ /*for mid text*/
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem; /*space in paragraph*/
+}
+
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mid .btn{
+margin-top: 2rem; /*space in button*/
+border: none;
+}
+
+.mid .btn a{
+   text-decoration: none;
+   text-transform: uppercase; 
+}
+
+.mid .btn a.simple{ /*to change the 1st button*/
+     color: #fff;
+     font-weight:500;
+     padding:  0.9rem 1.6rem;
+}
+
+.mid .btn a.border{ /*to change the 2nd button*/
+    color:#ff5733;
+    border: 1px solid #ff5733;
+    font-weight:500;
+    padding:  0.9rem 1.6rem;
+    border-radius:3px ;
+}
+.mid .btn a.border:hover{
+    background-color: white;/*hover effect */
+}
+.mid .btn a.simple:hover{
+    color:#ff5733 ;
+}
+
+
+/*secod pages*/
+.details{ /*two lines */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:8rem 15rem;
+    background-color: #171819;
+}
+.details h3,h6,h5{
+    color: #fff;
+}
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.2rem;
+}
+
+
+.details .one h6{
+font-size: 1.3rem;
+font-weight: 400;
+}
+
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom:3rem;
+}
+.details .one a{
+color: #fff;
+background: #f13a11;
+padding: 1rem 0;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+}
+
+.details .one a:hover{
+    background-color: #fff;
+    color:#f13a11;
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+.details .two h3{
+    font-size: 2.5rem;
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+}
+
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+
+/*end secod pages*/
+
+/*third pages*/
+
+.trainer{
+    background-color: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    
+}
+
+.trainer .about{
+width: 39%;
+
+}
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom:1.8rem ;
+    
+}
+
+
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  
+}
+
+
+.trainer .people{ /*to row the pics*/
+width: 57%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.trainer .people .team1 { /*edit a pics sizes*/
+width: 45%;
+height: auto;
+box-sizing: border-box;
+background: #fff;
+box-shadow:
+  2.1px 2.2px 3.6px rgba(0, 0, 0, 0.042),
+  5.8px 6px 10px rgba(0, 0, 0, 0.06),
+  13.9px 14.5px 24.1px rgba(0, 0, 0, 0.078),
+  46px 48px 80px rgba(0, 0, 0, 0.12);
+
+
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+  height: 250px;
+    object-fit: cover; /*Searching*/
+  
+}
+.trainer .people .team1 .name, .trainer .people .team1 .pro{ /*facebook and twitter*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .people .team1 .name{ /*for name action*/
+    padding: 5px 20px 0 20px;
+  
+}
+.trainer .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding-bottom: 10px;
+}
+
+
+.trainer .people .team1 .name h4{ /*for name and trainer*/
+    color: #212529;
+    font-size: 1.2rem;
+}
+
+.trainer .people .team1 .name i, .trainer .people .team1 .pro i{ /*target for i*/
+font-size: 1.3rem;
+font-weight: bolder;
+cursor:pointer;
+color: #212529;
+}
+
+.trainer .people .team1 .pro{ /*for yoga instructor*/
+    padding: 0 20px 5px 20px;
+}
+
+.trainer .people .team1 .pro p{
+color: #212529;
+}
+
+
+/*end third pages*/
+
+
+
+/*4thpages*/
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-bottom: 7rem 8rem;
+   
+
+}
+
+.class .paragraph{/**/
+    font-size:1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.class .h2{/**/
+    font-size:2.2rem;
+    color: #222;
+   font-weight: 700;
+   padding-bottom: 50px;
+   text-align: center;
+}
+.class .classMenu .team1 { /*edit a pics sizes*/
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:
+      2.1px 2.2px 3.6px rgba(0, 0, 0, 0.042),
+      5.8px 6px 10px rgba(0, 0, 0, 0.06),
+      13.9px 14.5px 24.1px rgba(0, 0, 0, 0.078),
+      46px 48px 80px rgba(0, 0, 0, 0.12)    ;
+ 
+ 
+
+    
+    }
+
+    .class .classMenu{ /*focus on pics row*/
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+       
+
+    }
+    .class .classMenu .team1 .img img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover; /*Searching*/
+    }
+    .class .classMenu .team1 .teamDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       padding-bottom: 10px;
+    }
+    .class .classMenu  .team1 .name,    .class .classMenu  .team1 .pro{ /*facebook and twitter*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    
+    .class .classMenu .team1 .teamDetails .name { /*Target name*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       align-items: center;
+       padding: 5px 30px 0 30px;
+   
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{/*Target h4*/
+        color: #212529;
+        font-size: 1.7rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{/*Target P*/
+        color: #212529;
+        font-size: 1.1rem;
+    }
+
+    .class .classMenu .team1 .teamDetails .name .nameDetails p .span{/*Target .span*/
+     font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .class .classMenu .team1 .teamDetails .name .num h5{/*Target h5*/
+       font-size: 1rem;
+       background: #f13a11;
+       width: 3.5rem;
+       height: 3.5rem;
+       line-height: 3.5rem;
+       text-align: center;
+       border-radius: 50%;
+       }
+       .class .classMenu .team1 .pro{
+           padding: 15px 30px 30px 30px;
+       }
+
+       .class .classMenu .team1 .pro p{/*Target h5*/
+        font-size: 1.1rem;
+       color: #666262 ;
+        }
+ 
+            
+/*end 4thpages*/
+
+
+/*5thpages*/
+.contact{
+    padding: 8rem;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact .form{
+    width: 45%;
+}
+
+.contact .form h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+width: 100%;
+padding: 15px;
+border: 1px solid #95a5a6;
+margin:13px 0 ;
+outline: none;
+}
+
+.contact .form .submit input:focus , .contact .form .submit textarea:focus{
+    border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+.contact .form .submit a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    background: #111;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin: 13px 0;
+    color: #fff;
+
+}
+
+.contact .map{
+    width: 45%;
+}
+.contact .map iframe{
+    width: 100%;
+}
+.contact .map h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .map p{
+    font-size: 1.1rem;
+    color: #212529;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.contact .map p i{
+    color: red;
+    padding: 4px;
+}
+
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+.footer p i{
+    color: red;
+    padding-right: 5px;
+}
+/*end 5thpages*/
+
+/*media query*/
+
+@media screen and (max-width: 1042px){
+    
+    .nav{
+
+        padding: 1rem 4.5rem;
+    }
+    
+    .nav h2{
+        font-size: 1.4rem;
+    }
+    
+    #items{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between; 
+        align-items: center;
+    
+    }
+    
+    #items li{
+      
+        padding-right: 30px; 
+        
+    }
+    
+
+    
+    #items li a{
+        
+        font-size: 0.9rem;
+     
+    }
+/*second*/
+    
+    .back{
+        background-image: url(bg.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size:auto;
+        background-size: cover;
+        z-index: -1;
+        
+        
+    }
+    
+    
+    .back .overlay { /*background Change*/
+        background: #171819;
+        width: 100%;
+        height: 100%;
+        opacity: 0.85;
+    }
+    
+    .mid{ /*for mid text*/
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+    
+    }
+    
+    .mid p{
+      
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem; /*space in paragraph*/
+    }
+    
+    
+    .mid h2{
+       
+        font-size: 2.5rem;
+    }
+    
+    .mid .btn{
+    margin-top: 1.5rem; /*space in button*/
+    }
+    
+    .mid .btn a{
+       font-size: 0.9rem;
+    
+     
+    }
+    
+    .mid .btn a.simple{ /*to change the 1st button*/
+         padding: 0.7rem 1.4rem;
+    }
+    
+    .mid .btn a.border{ /*to change the 2nd button*/
+       
+        padding:  0.7rem 1.4rem;
+        
+    }
+
+    /*second pages*/
+
+    .details{ /*two lines */
+        
+        padding:6rem 7rem;
+       
+    }
+   
+    .details .one{
+        width: 50%;
+       
+    }
+    
+    
+    .details .one h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    
+
+    
+    .details .one p{
+       
+        font-size: 1.1rem;
+        padding-bottom:2.2rem;
+    }
+    .details .one a{
+    font-size: 0.9rem;
+    }
+    
+    .details .two{
+        padding-left: 3.5rem;
+    }
+    .details .two h3{
+        font-size: 2rem;
+    }
+    
+    .details .two h5{
+        font-size: 1rem;
+    }
+    
+    .details .two p{
+        font-size: 1rem;
+    
+        margin-bottom: 0.6rem;
+    }
+
+    /*third pages*/
+
+    .trainer{
+        
+        padding: 6rem 7rem;
+    }
+    
+    .trainer .about{
+    width: 39%;
+    
+    }
+    .trainer .about h2{
+        font-size: 2rem;
+        padding-bottom:1.4rem ;
+        
+    }
+    .trainer .about p{
+        font-size: 1.1rem;
+      
+    }
+    
+    .trainer .people .team1 { /*edit a pics sizes*/
+    width: 48%;
+    }
+    
+    .trainer .people .team1 .name{ /*for name action*/
+        padding: 5px 15px 0 15px;
+      
+    }
+    
+    .trainer .people .team1 .name h4{ /*for name and trainer*/
+        font-size: 1.1rem;
+    }
+    
+    .trainer .people .team1 .name i, .trainer .people .team1 .pro i{ /*target for i*/
+    font-size: 1.1rem;
+    }
+    
+    .trainer .people .team1 .pro{ /*for yoga instructor*/
+        padding: 0 15px 5px 15px;
+    }
+
+    /*4th*/
+
+    .class{
+       padding-bottom: 6rem;
+       
+    
+    }
+    
+    .class .paragraph{/**/
+        font-size:1.1rem;
+         padding-bottom:4px;
+    }
+    
+    .class .h2{/**/
+        font-size:2rem;
+       padding-bottom: 30px;
+    
+    }
+        .class .classMenu .team1 .teamDetails{
+           padding-bottom: 7px;
+        }
+        
+
+        
+        .class .classMenu .team1 .teamDetails .name { /*Target name*/
+           padding: 5px 15px 0 15px;
+       
+        }
+        
+        .class .classMenu .team1 .teamDetails .name .nameDetails p{/*Target P*/
+            font-size: 1rem;
+        }
+    
+        .class .classMenu .team1 .teamDetails .name .nameDetails p .span{/*Target .span*/
+            font-size: 1rem;
+        }
+    
+        .class .classMenu .team1 .teamDetails .name .num h5{/*Target h5*/
+           font-size: 0.9rem;
+          
+           width: 3.2rem;
+           height: 3.2rem;
+           line-height: 3.2rem;
+           }
+           .class .classMenu .team1 .pro{
+               padding: 15px 15px 30px 15px;
+           }
+    
+           .class .classMenu .team1 .pro p{/*Target h5*/
+            font-size: 1rem;
+            }
+            /*5th pages*/
+            .contact{
+                padding: 6rem;
+            }
+            
+            .contact .form h2{
+                font-size: 2rem;
+                
+                padding-bottom: 7px;
+               
+            }
+            
+            
+            .contact .form .submit input, .contact .form .submit textarea{
+       
+            padding: 12px;
+           
+            margin:10px 0 ;
+            }
+            
+            
+            
+            .contact .form .submit input::placeholder{
+                color: #7f8c8d;
+                font-size: 1rem;
+            }
+            
+            .contact .form .submit textarea::placeholder{
+                font-size: 1rem;
+            
+            }
+            .contact .form .submit a{
+                font-size: 1.1rem;
+                padding: 13px 0;
+                margin: 10px 0;
+            }
+            
+            .contact .map h2{
+                font-size: 2rem;
+                padding-bottom: 7px;
+            }
+            
+            .contact .map p{
+                font-size: 1rem;
+           
+                padding-bottom: 20px;
+            }
+
+            /*6th*/
+           
+            
+            .footer{
+            
+                padding-right: 6rem;
+            }
+
+           
+            
+            
+    
+}
+
+@media screen and (max-width: 991px){
+    .nav-link{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    .back{
+        background-position: center;
+    }
+    
+    .mid{ /*for mid text*/
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+    
+    }
+    .nav-link{
+        text-align: center;
+        font-size: large;
+    }
+
+
+
+    .mid{
+        margin-top: 100px;
+    }
+    
+    .mid p{
+      
+        font-size: 1.1rem;
+        margin-bottom: 1rem; /*space in paragraph*/
+    }
+    
+    
+    .mid h2{
+       
+        font-size: 2.1rem;
+    }
+    
+    .mid .btn{
+    margin-top: 1rem; /*space in button*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .mid .btn a{
+       font-size: 0.9rem;
+    
+     
+    }
+    
+    .mid .btn a.simple{ /*to change the 1st button*/
+         padding: 0.7rem 1.4rem;
+         margin-bottom: 7px;
+    }
+    
+    .mid .btn a.border{ /*to change the 2nd button*/
+       
+        padding:  0.7rem 1.4rem;
+        
+    }
+
+    /*second pages*/
+
+    .details{ /*two lines */
+        
+        padding:5rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+   
+    .details .one{
+        width: 70%;
+       
+    }
+    
+    .details .one a{
+    font-size: 1rem;
+    }
+    
+    /*create a border*/
+    .details .two{
+        padding-left: 0;
+        border-left: 0;
+        border-top: 1px solid #666262;
+        width: 70%;
+        margin-top: 1.7rem;
+        padding-top:1.7rem ;
+
+    }
+   
+    /*third pages*/
+
+    .trainer{
+        
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .trainer .about{
+    width: 70%;
+    margin-bottom: 1.7rem;
+    }
+
+    .trainer .people{
+        width: 70%;
+    }
+
+    /*4th*/
+
+    .class{
+       padding-bottom: 6rem;
+       
+    }
+    
+        
+        .class .classMenu{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .class .classMenu .team1 {
+            width: 65%;
+            margin-bottom: 20px;
+        }
+    
+        .class .classMenu .team1 .teamDetails .name .nameDetails p .span{/*Target .span*/
+            font-size: 1rem;
+        }
+    
+        .class .classMenu .team1 .teamDetails .name .num h5{/*Target h5*/
+           font-size: 0.9rem;
+          
+           width: 3.2rem;
+           height: 3.2rem;
+           line-height: 3.2rem;
+           }
+           .class .classMenu .team1 .pro{
+               padding: 15px 15px 30px 15px;
+           }
+    
+           .class .classMenu .team1 .pro p{/*Target h5*/
+            font-size: 1rem;
+            }
+            /*5th pages*/
+            .contact{
+                padding: 5rem 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact .form{
+                width:70%;
+                margin-bottom: 1.5rem;
+            }
+            
+            .contact .form h2{
+                font-size: 2.5rem;
+                padding-bottom: 7px;
+               
+            }
+            
+            .contact .map h2{
+                font-size: 2.5rem;
+                padding-bottom: 7px;
+                
+            }
+            .contact .map{
+                width: 65%;
+            }
+            
+            .contact .map p{
+                font-size: 1rem;
+                padding-bottom: 20px;
+            }
+
+            /*6th*/
+           
+            
+            .footer{
+            
+                padding-right: 5rem 2rm;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+}
+
+@media screen and (max-width: 496px){
+
+   
+    .mid{ /*for mid text*/
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+    
+    }
+    
+    .mid p{
+        margin-bottom: 0.8rem; /*space in paragraph*/
+    }
+    
+    
+    .mid h2{
+        font-size: 1.8rem;
+    }
+    
+    .mid .btn{
+    margin-top: 1rem; /*space in button*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .mid .btn a{
+       font-size: 0.9rem;
+    
+     
+    }
+    
+    /*second pages*/
+
+    .details{ /*two lines */
+        
+        padding:4rem 1rem;
+    
+    }
+   
+    .details .one{
+        width: 100%;
+       
+    }
+    
+    
+    /*create a border*/
+    .details .two{
+        width:100%;
+
+    }
+   
+    /*third pages*/
+
+    .trainer{
+        padding: 4rem 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .trainer .about{
+    width: 100%;
+    }
+
+    .trainer .people{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .trainer .people .team1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*4th*/
+
+    .class{
+       padding: 4rem 1rem;
+       
+    }
+    
+
+        .class .classMenu .team1 {
+            width: 100%;
+        
+        }
+    
+        .class .classMenu .team1 .teamDetails .name .nameDetails p .span{/*Target .span*/
+            font-size: 1rem;
+        }
+    
+        .class .classMenu .team1 .teamDetails .name .num h5{/*Target h5*/
+           font-size: 0.9rem;
+          
+           width: 3.2rem;
+           height: 3.2rem;
+           line-height: 3.2rem;
+           }
+           .class .classMenu .team1 .pro{
+               padding: 15px 15px 30px 15px;
+           }
+    
+           .class .classMenu .team1 .pro p{/*Target h5*/
+            font-size: 1rem;
+            }
+            /*5th pages*/
+            .contact{
+                padding: 4rem 1rem;
+            }
+
+            .contact .form{
+                width:100%;
+                margin-bottom: 1.5rem;
+            }
+            
+            
+            .contact .map h2{
+                font-size: 2.5rem;
+                padding-bottom: 7px;
+                
+            }
+            .contact .map{
+                width: 100%;
+            }
+            
+            .contact .map p{
+                font-size: 1rem;
+                padding-bottom: 20px;
+            }
+
+            /*6th*/
+           
+            
+            .footer{
+            
+                padding-right: 5rem 2rm;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    
+}
